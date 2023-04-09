@@ -1,0 +1,46 @@
+.about{
+	background-color: $bg-color-dark;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: $text-color-white;
+	font-weight: 500;
+	
+}
+.studies {
+	margin-top: 180px;
+	font-size: 1.2rem;
+	letter-spacing: 0.08rem;
+}
+
+// TECH STACK
+.techStack{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.techStack img {
+	margin-top: 10px;
+}
+.techStack span {
+		font-size: 1.2rem;
+		font-weight: 600;
+}
+
+// MY INFO
+.info{ 
+	margin-top: 20px;
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+.myInfo div{
+	border-bottom: 1px solid $accent-color-green;
+	padding: 5px 0px;
+	
+}
+.myInfo {
+	display: flex;
+	flex-direction: column;
+}

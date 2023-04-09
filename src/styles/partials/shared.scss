@@ -1,3 +1,4 @@
+// Shared
 .page {
 	font-family: 'Poppins', sans-serif;
 	width: 100%;
@@ -7,20 +8,52 @@
 	width: 80%;
 	float: right;
 }
+
+
+// Headings
 h1 {
 	font-size: 3rem;
 }
+.h2-bg{
+	font-weight: 900;
+	font-size: 7rem;
+	color: $text-color-Dgray;
+	position: absolute;
+}
+h2{
+	color: $text-color-white;
+	margin-top: 65px;
+	position: absolute;
+	border-bottom: 2px solid $accent-color-green;
+}
+
+// Buttons
 .button {
 	margin-top: 10px;
 	display: inline-block;
 	border-radius: 20px;
 	padding: 5px 20px;
 	text-decoration: none;
+	max-width: 120px;
 }
-.flex {
-	display: flex;
+.hireMe {
+	color: $accent-color-green;
+	border: 2px solid $accent-color-green;
+}
+.buttonFill{
+	margin-top: 20px;
+	color: $text-color-white;
+	background-color: $accent-color-green;
+	border: 2px solid $accent-color-green;
+	align-self: center;
 }
 
+.accent {
+	color: $accent-color-green;
+}
+
+
+// Media Queries
 @media screen and (max-width: 414px) {
 	.section {
 		width: 100%;
