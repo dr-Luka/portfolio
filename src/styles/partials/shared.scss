@@ -1,0 +1,31 @@
+.page {
+	font-family: 'Poppins', sans-serif;
+	width: 100%;
+	min-height: 100vh;
+}
+.section {
+	width: 80%;
+	float: right;
+}
+h1 {
+	font-size: 3rem;
+}
+.button {
+	margin-top: 10px;
+	display: inline-block;
+	border-radius: 20px;
+	padding: 5px 20px;
+	text-decoration: none;
+}
+.flex {
+	display: flex;
+}
+
+@media screen and (max-width: 414px) {
+	.section {
+		width: 100%;
+		float: none;
+	}
+
+}
+	

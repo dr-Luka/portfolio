@@ -27,3 +27,24 @@ nav ul li {
 	justify-content: space-evenly;
 	width: 100%;
 }
+.nav-toggle{
+	display: none;
+}
+.not-visible{
+	display: none;
+}
+	
+@media screen and (max-width: 414px) {
+		.nav-toggle{
+			display: block;
+			float: left;
+				margin-left: 20%;
+				position: absolute;
+		}
+		.nav{
+			display: none;
+		}
+		
+	}
+		
+	

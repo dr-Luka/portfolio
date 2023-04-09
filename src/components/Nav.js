@@ -1,9 +1,17 @@
+import React, { useState } from "react";
 import me from "../media/images/me.png";
-import { github, linkedin } from "../media/icons/icons.js";
+import github from "../media/icons/github.png";
+import linkedin from "../media/icons/linkedin.png";
+
 export default function Nav() {
+  const [navToggle, setNavToggle] = useState(false);
   return (
     <>
-      <nav>
+      <button onClick={() => setNavToggle(!navToggle)} className="nav-toggle">
+        Toggle
+      </button>
+
+      <nav className={`${navToggle ? "not-visible" : "visible"}`}>
         <div>
           <img
             className="nav-img"
