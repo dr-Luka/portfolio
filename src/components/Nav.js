@@ -1,16 +1,5 @@
 import me from "../media/images/me.png";
-import {
-  css,
-  html,
-  github,
-  linkedin,
-  react,
-  nextjs,
-  email,
-  js,
-  phone,
-  sass,
-} from "../media/icons/icons.js";
+import { github, linkedin } from "../media/icons/icons.js";
 export default function Nav() {
   return (
     <>
