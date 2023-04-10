@@ -36,6 +36,7 @@ input[type="text"]  {
 	border-radius: 5px;
 	color: $text-color-white;
 	box-shadow: -2px 2px 5px 0px $accent-color-green;
+	color: black;
 }
 textarea{
 	height: 150px;
@@ -49,6 +50,8 @@ textarea{
 	padding: 5px;
 	resize: none;
 	box-shadow: -2px 2px 5px 0px $accent-color-green;
+	color:black;
+	font-family: 'Poppins', sans-serif;
 }
 textarea:focus,
 input:focus {

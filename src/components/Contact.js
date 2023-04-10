@@ -2,6 +2,11 @@ import email from "../media/icons/email.png";
 import phone from "../media/icons/phone.png";
 
 export default function Contact() {
+  const handleSubmit = (event) => {
+    console.log("handleSubmit ran");
+    event.preventDefault();
+    document.form.reset();
+  };
   return (
     <>
       <div className="section contact" id="contact">
@@ -10,13 +15,15 @@ export default function Contact() {
         <div className="contact-info">
           <div className="contact-form">
             <span>Contact Me Now</span>
-            <form>
+            <form name="form">
               <input type="text" placeholder="Name" />
               <input type="text" placeholder="Phone or Email" />
 
               <textarea placeholder="Tell me more about your needs......"></textarea>
               <div className="button-wrapper">
-                <button className="button buttonFill">Send Message</button>
+                <button onClick={handleSubmit} className="button buttonFill">
+                  Send Message
+                </button>
               </div>
             </form>
           </div>
