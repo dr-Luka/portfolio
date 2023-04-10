@@ -1,6 +1,16 @@
 import stack from "../media/icons/stack.png";
 import me from "../media/images/me.png";
 export default function About() {
+  function scroll(event) {
+    let id = event.target.name;
+    const section = document.getElementById(id);
+    section.scrollIntoView({
+      block: "start",
+      behavior: "smooth",
+      inline: "start",
+    });
+  }
+
   return (
     <>
       <div className="section about" id="about">
@@ -34,7 +44,13 @@ export default function About() {
               <span className="darken">Language:</span> English
             </div>
 
-            <button className="button buttonFill">Download CV</button>
+            <button
+              onClick={scroll}
+              className="button buttonFill"
+              name="contact"
+            >
+              Get CV
+            </button>
           </div>
         </div>
       </div>

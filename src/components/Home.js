@@ -1,4 +1,14 @@
 export default function Home() {
+  function scroll(event) {
+    let id = event.target.name;
+    const section = document.getElementById(id);
+    section.scrollIntoView({
+      block: "start",
+      behavior: "smooth",
+      inline: "start",
+    });
+  }
+
   return (
     <>
       <div className="section home" id="home">
@@ -6,7 +16,9 @@ export default function Home() {
         <h1>I'm a Front-End Developer</h1>
         <div className="darken">based in Oslo, Norway</div>
         <div>
-          <button className="button hireMe">Hire Me</button>
+          <button onClick={scroll} className="button hireMe" name="contact">
+            Hire Me
+          </button>
         </div>
       </div>
     </>
