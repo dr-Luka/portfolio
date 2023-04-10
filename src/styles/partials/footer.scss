@@ -1,5 +1,5 @@
 .footer {
-	background: radial-gradient(circle, hsla(0, 0%, 14%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+	background: $bg-color-footer;
 	color: $text-color-white;
 	display: flex;
 	justify-content: space-between;
