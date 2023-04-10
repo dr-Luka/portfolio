@@ -8,6 +8,7 @@ export default function Portfolio() {
           <div className="project">
             <div className="project-img"></div>
             <div className="project-info">
+              <div className="project-name">Name Of Project</div>
               <div className="project-desc">
                 Lisque persius interesset his et, in quot quidam persequeris
                 vim, ad mea essent possim iriure.Lisque persius interesset his
@@ -26,6 +27,7 @@ export default function Portfolio() {
           <div className="project reverse">
             <div className="project-img"></div>
             <div className="project-info">
+              <div className="project-name">Name Of Project</div>
               <div className="project-desc">
                 Lisque persius interesset his et, in quot quidam persequeris
                 vim, ad mea essent possim iriure.Lisque persius interesset his

@@ -11,9 +11,7 @@
 
 
 // Headings
-h1 {
-	font-size: 3rem;
-}
+
 .h2-bg{
 	font-weight: 900;
 	font-size: 7rem;
@@ -34,11 +32,17 @@ h2{
 	border-radius: 20px;
 	padding: 5px 20px;
 	text-decoration: none;
-	max-width: 120px;
+	min-width: 65px;
+	text-align: center;
 }
 .hireMe {
 	color: $accent-color-green;
 	border: 2px solid $accent-color-green;
+	
+	
+}
+.hireMe:hover{
+	animation: buttonHover 0.3s forwards;
 }
 .buttonFill{
 	margin-top: 20px;
@@ -47,18 +51,34 @@ h2{
 	border: 2px solid $accent-color-green;
 	align-self: center;
 }
+.buttonFill:hover{
+	animation: buttonHover 0.3s forwards;
+}
 
 .accent {
 	color: $accent-color-green;
 }
 
-
-// Media Queries
-@media screen and (max-width: 414px) {
-	.section {
-		width: 100%;
-		float: none;
+// ANIMATION
+@keyframes buttonHover {
+	0% {
+		box-shadow: none;
 	}
+	100% {
+		box-shadow: 0px 0px 10px 0px $accent-color-green;
+	}
+}
+// Media Queries
+@media screen and (max-width: 420px) {
+.h2-bg{
+	font-size: 3rem;
+	overflow: hidden;
+}
+h2{
+	margin-top: 40px;
+}
+	
+
 
 }
 	

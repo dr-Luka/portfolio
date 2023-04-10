@@ -21,8 +21,17 @@ nav{
 .nav-name{
 	letter-spacing: 0.15rem;
 }
-nav ul li {
+.nav-link {
 	margin-bottom: 15px;
+	background-color: rgba($color: #000000, $alpha: 0);
+	border: none;
+	color: $text-color-white;
+	font-size: 1.2rem;
+	border-bottom: 2px solid rgba($color: #000000, $alpha: 0);
+}
+.nav-link:hover{
+	cursor:pointer;
+	border-bottom: 2px solid $accent-color-green;
 }
 .nav-social {
 	display: flex;
@@ -32,8 +41,8 @@ nav ul li {
 .nav-toggle{
 	display: none;
 }
-.not-visible{
-	display: none;
+.nav-active{
+	display: block;
 }
 
 @keyframes wave {
@@ -41,30 +50,30 @@ nav ul li {
 			border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
 	}
 	25% {
-			border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
+			border-radius: 40% 60% 30% 70%/60% 30% 70% 40%;
 	}
 	50% {
 			border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
 	}
 	75% {
-			border-radius: 40% 60% 30% 70%/60% 30% 70% 40%;
+			border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
 	}
 	100% {
 			border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
 	}
 }
 	
-@media screen and (max-width: 414px) {
-		.nav-toggle{
-			display: block;
-			float: left;
-				margin-left: 20%;
-				position: absolute;
+@media screen and (max-width: 420px) {
+	nav{
+		display: none;
+	}
+
+	.nav-toggle{
+		display: block;
+		float: right;
+		margin-left: 45%;
+		position: absolute;
 		}
-		.nav{
-			display: none;
-		}
-		
 	}
 		
 	

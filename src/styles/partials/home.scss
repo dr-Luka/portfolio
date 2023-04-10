@@ -11,7 +11,8 @@ justify-content: center;
 h1 {
 font-size: 3rem;
 overflow: hidden;
-border-right: .15em solid $accent-color-green;
+border-right: .1rem solid $accent-color-green;
+padding-right: 5px;
 white-space: nowrap;
 margin: 0 auto;
 animation:
@@ -20,7 +21,6 @@ animation:
 }
 .welcome {
 font-size: 1.8rem;
-
 }
 
 .based{
@@ -47,4 +47,16 @@ font-size: 1.8rem;
 	50% {
 		border-color: $accent-color-green;
 	}
+}
+
+@media screen and (max-width: 420px) {
+	.section {
+		width: 100%;
+	}
+	h1{
+		font-size: 1.3rem;
+		margin: 0px auto;
+		width: clamp(180px, 65%, 300px);
+	}
+
 }

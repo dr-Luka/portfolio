@@ -19,20 +19,32 @@
 	width: 100%;
 	margin-bottom: 80px;
 }
+.project-name{
+	margin-bottom: 30px;
+	text-align: center;
+}
+
 .project-img {
-	width: 300px;
-	height: 200px;
+	width: 400px;
+	height: 300px;
 	border-radius: 10px;
 	background-color: rgb(135, 124, 124);
 }
 .project-info{
  max-width: 300px;
+ 
 }
 .project-links {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 }
 
 .reverse {
  flex-direction: row-reverse;		
+}
+
+@media screen and (max-width: 420px) {
+	.project {
+		flex-direction: column;
+	}
 }
