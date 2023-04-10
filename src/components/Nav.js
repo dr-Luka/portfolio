@@ -4,7 +4,6 @@ import github from "../media/icons/github.png";
 import linkedin from "../media/icons/linkedin.png";
 
 export default function Nav() {
-  const [navToggle, setNavToggle] = useState(false);
   const [screenSize, setScreenSize] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -28,17 +27,7 @@ export default function Nav() {
 
   return (
     <>
-      {screenSize > 420 && (
-        <button onClick={() => setNavToggle(!navToggle)} className="nav-toggle">
-          Toggle
-        </button>
-      )}
-      <nav
-        className={`${navToggle ? "nav-active" : ""} ${
-          screenSize < 420 ? "small-screen" : ""
-        }`}
-        name="nav"
-      >
+      <nav className={` ${screenSize < 420 ? "small-screen" : ""}`} name="nav">
         <div>
           <img
             className="nav-img"

@@ -4,11 +4,9 @@ export default function Home() {
       <div className="section home" id="home">
         <div className="welcome">Welcome</div>
         <h1>I'm a Front-End Developer</h1>
-        <div className="based">based in Oslo, Norway</div>
+        <div className="darken">based in Oslo, Norway</div>
         <div>
-          <a href="index" className="button hireMe">
-            Hire Me
-          </a>
+          <button className="button hireMe">Hire Me</button>
         </div>
       </div>
     </>

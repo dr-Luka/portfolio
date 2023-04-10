@@ -15,8 +15,7 @@ nav{
 	width: 60%;
 	margin-top: 30px;
 	box-shadow: 10 10 30px #FF0000;
-	animation: wave 20s ease-in-out infinite;
-
+	animation: wave 10s ease-in-out infinite;
 }
 .nav-name{
 	letter-spacing: 0.15rem;
@@ -45,23 +44,7 @@ nav{
 	display: block;
 }
 
-@keyframes wave {
-	0% {
-			border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
-	}
-	25% {
-			border-radius: 40% 60% 30% 70%/60% 30% 70% 40%;
-	}
-	50% {
-			border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
-	}
-	75% {
-			border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
-	}
-	100% {
-			border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-	}
-}
+
 	
 @media screen and (max-width: 420px) {
 	nav{

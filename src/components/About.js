@@ -1,5 +1,5 @@
 import stack from "../media/icons/stack.png";
-
+import me from "../media/images/me.png";
 export default function About() {
   return (
     <>
@@ -16,14 +16,25 @@ export default function About() {
             <img src={stack} alt="Tech Stack" />
           </div>
           <div className="myInfo">
-            <div>Name: Luka Mikic</div>
-            <div>Email: luka000mikic@gmail.com</div>
-            <div>Age: 25</div>
-            <div>Language: English</div>
+            <img
+              className="nav-img about-img"
+              src={me}
+              alt="Portrait of an awesome person!"
+            />
+            <div>
+              <span className="darken">Name:</span> Luka Mikic
+            </div>
+            <div>
+              <span className="darken">Email:</span> luka000mikic@gmail.com
+            </div>
+            <div>
+              <span className="darken">Age: </span>25
+            </div>
+            <div>
+              <span className="darken">Language:</span> English
+            </div>
 
-            <a href="index" className="button buttonFill">
-              Download CV
-            </a>
+            <button className="button buttonFill">Download CV</button>
           </div>
         </div>
       </div>

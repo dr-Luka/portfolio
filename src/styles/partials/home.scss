@@ -12,9 +12,7 @@ h1 {
 font-size: 3rem;
 overflow: hidden;
 border-right: .1rem solid $accent-color-green;
-padding-right: 5px;
 white-space: nowrap;
-margin: 0 auto;
 animation:
 	typing 3.5s steps(40, end),
  	blink-caret 0.95s step-end infinite;
@@ -23,40 +21,15 @@ animation:
 font-size: 1.8rem;
 }
 
-.based{
-	color: $text-color-Lgray;
-}	
-
-// ANIMATIONS
-@keyframes typing {
-	from {
-		width: 0
-	}
-
-	to {
-		width: 70%
-	}
-}
-@keyframes blink-caret {
-
-	from,
-	to {
-		border-color: transparent
-	}
-
-	50% {
-		border-color: $accent-color-green;
-	}
-}
-
 @media screen and (max-width: 420px) {
 	.section {
 		width: 100%;
 	}
-	h1{
+
+	h1 {
 		font-size: 1.3rem;
 		margin: 0px auto;
-		width: clamp(180px, 65%, 300px);
+		width: fit-content;
 	}
 
 }

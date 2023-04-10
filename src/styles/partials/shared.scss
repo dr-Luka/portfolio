@@ -32,13 +32,14 @@ h2{
 	border-radius: 20px;
 	padding: 5px 20px;
 	text-decoration: none;
-	min-width: 65px;
+	min-width: 85px;
 	text-align: center;
+	font-size: 1.1rem;
 }
 .hireMe {
 	color: $accent-color-green;
 	border: 2px solid $accent-color-green;
-	
+	background-color: transparent;
 	
 }
 .hireMe:hover{
@@ -52,33 +53,29 @@ h2{
 	align-self: center;
 }
 .buttonFill:hover{
-	animation: buttonHover 0.3s forwards;
+	animation: buttonHover 0.8s forwards;
 }
 
 .accent {
 	color: $accent-color-green;
 }
-
-// ANIMATION
-@keyframes buttonHover {
-	0% {
-		box-shadow: none;
-	}
-	100% {
-		box-shadow: 0px 0px 10px 0px $accent-color-green;
-	}
+.darken {
+	color: $text-color-Lgray;
 }
+
 // Media Queries
 @media screen and (max-width: 420px) {
 .h2-bg{
-	font-size: 3rem;
+	margin-top: 20px;
+	font-size: 3.4rem;
 	overflow: hidden;
 }
 h2{
-	margin-top: 40px;
+	margin-top: 50px;
 }
-	
-
+.section {
+	width: 100%;
+}
 
 }
 	

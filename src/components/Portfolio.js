@@ -15,12 +15,8 @@ export default function Portfolio() {
                 et, in quot quidam persequeris vim, ad mea essent possim
               </div>
               <div className="project-links">
-                <a href="index" className="button buttonFill">
-                  Preview
-                </a>
-                <a href="index" className="button buttonFill">
-                  Code
-                </a>
+                <button className="button buttonFill">Preview</button>
+                <button className="button buttonFill">Code</button>
               </div>
             </div>
           </div>
@@ -34,12 +30,8 @@ export default function Portfolio() {
                 et, in quot quidam persequeris vim, ad mea essent possim
               </div>
               <div className="project-links">
-                <a href="index" className="button buttonFill">
-                  Preview
-                </a>
-                <a href="index" className="button buttonFill">
-                  Code
-                </a>
+                <button className="button buttonFill">Preview</button>
+                <button className="button buttonFill">Code</button>
               </div>
             </div>
           </div>
