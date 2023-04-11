@@ -25,8 +25,10 @@ body{
 .h2-bg{
 	font-weight: 900;
 	font-size: 7rem;
-	color: $text-color-Dgray;
+	color: transparent;
 	position: absolute;
+	-webkit-text-stroke-width: 0.5px;
+		-webkit-text-stroke-color: rgba(255, 255, 255,0.5);
 }
 h2{
 	color: $text-color-white;
@@ -89,6 +91,15 @@ h2{
 }
 .section {
 	width: 100%;
+}
+body {
+	background-color: rgb(24, 61, 180);
+	background-image:
+		radial-gradient(at 83% 56%, hsla(270, 100%, 40%, 1) 0px, transparent 50%),
+		radial-gradient(at 43% 34%, hsla(240, 100%, 40%, 1) 0px, transparent 50%),
+		radial-gradient(at 85% 33%, rgb(17, 33, 155) 0px, transparent 50%),
+		radial-gradient(at 10% 71%, hsla(206, 100%, 40%, 1) 0px, transparent 50%),
+		radial-gradient(at 80% 99%, hsla(240, 100%, 40%, 1) 0px, transparent 50%);
 }
 
 }
