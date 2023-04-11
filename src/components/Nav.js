@@ -53,7 +53,7 @@ export default function Nav() {
             </button>
           </li>
           <li>
-            <button name="contact" className="nav-link">
+            <button onClick={scroll} name="contact" className="nav-link">
               Contact
             </button>
           </li>

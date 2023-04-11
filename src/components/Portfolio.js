@@ -1,3 +1,5 @@
+import placeholder from "../../src/media/images/placeholder.webp";
+
 export default function Portfolio() {
   return (
     <>
@@ -6,7 +8,10 @@ export default function Portfolio() {
         <h2>My Work</h2>
         <div className="projects">
           <div className="project">
-            <div className="project-img"></div>
+            <div className="project-img">
+              <img src={placeholder} alt="Project Screenshot"></img>
+            </div>
+
             <div className="project-info">
               <div className="project-name">Name Of Project</div>
               <div className="project-desc">
@@ -21,7 +26,9 @@ export default function Portfolio() {
             </div>
           </div>
           <div className="project reverse">
-            <div className="project-img"></div>
+            <div className="project-img">
+              <img src={placeholder} alt="Project Screenshot"></img>
+            </div>
             <div className="project-info">
               <div className="project-name">Name Of Project</div>
               <div className="project-desc">
