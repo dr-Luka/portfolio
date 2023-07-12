@@ -60,10 +60,15 @@ export default function Nav() {
         </ul>
         <div className="nav-social">
           <div>
-            <img src={github} alt="Github Logo" />
+            <a href="https://github.com/dr-Luka">
+              {" "}
+              <img src={github} alt="Github Logo" />
+            </a>
           </div>
           <div>
-            <img src={linkedin} alt="LinkedIn Logo" />
+            <a href="https://www.linkedin.com/in/luka-mikic-8a9758225/">
+              <img src={linkedin} alt="LinkedIn Logo" />
+            </a>
           </div>
         </div>
       </nav>
